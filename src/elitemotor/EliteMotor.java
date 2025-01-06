@@ -2,11 +2,18 @@ package elitemotor;
 
 import java.util.Scanner;
 
+interface Utility{
+    
+    public void getDetails();
+    
+    public void setDetails();
+}
+
 public class EliteMotor {
 
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
-
+        Showroom sr = new Showroom(sc);
         while (true) {
             System.out.println("========== WELCOME TO ELITE MOTORS==========");
             System.out.println("============================================");
@@ -22,12 +29,15 @@ public class EliteMotor {
             int ch = sc.nextInt();
             switch (ch) {
                 case 1:
+                    sr.setDetails();
+                    System.out.println("");
                     break;
                 case 2:
                     break;
                 case 3:
                     break;
                 case 4:
+                    sr.getDetails();
                     break;
                 case 5:
                     break;
