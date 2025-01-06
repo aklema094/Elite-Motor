@@ -35,7 +35,7 @@ public class Showroom implements Utility {
         sAddress = sc.nextLine();
         System.out.print("Enter Manager Name : ");
         mName = sc.nextLine();
-        System.out.print("Total No Of Employees");
+        System.out.print("Total No Of Employees : ");
         bikeinStock = sc.nextInt();
 
     }

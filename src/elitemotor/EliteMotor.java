@@ -14,6 +14,7 @@ public class EliteMotor {
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
         Showroom sr = new Showroom(sc);
+        Employees emp = new Employees(sc);
         while (true) {
             System.out.println("========== WELCOME TO ELITE MOTORS==========");
             System.out.println("============================================");
@@ -33,6 +34,7 @@ public class EliteMotor {
                     System.out.println("");
                     break;
                 case 2:
+                    emp.setDetails();
                     break;
                 case 3:
                     break;
@@ -40,6 +42,7 @@ public class EliteMotor {
                     sr.getDetails();
                     break;
                 case 5:
+                    emp.getDetails();
                     break;
                 case 6:
                     break;
