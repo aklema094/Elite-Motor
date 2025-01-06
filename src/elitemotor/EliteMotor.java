@@ -15,6 +15,7 @@ public class EliteMotor {
         Scanner sc = new Scanner(System.in);
         Showroom sr = new Showroom(sc);
         Employees emp = new Employees(sc);
+        Bike bk = new Bike(sc);
         while (true) {
             System.out.println("========== WELCOME TO ELITE MOTORS==========");
             System.out.println("============================================");
@@ -37,6 +38,7 @@ public class EliteMotor {
                     emp.setDetails();
                     break;
                 case 3:
+                    bk.setDetails();
                     break;
                 case 4:
                     sr.getDetails();
@@ -45,6 +47,7 @@ public class EliteMotor {
                     emp.getDetails();
                     break;
                 case 6:
+                    bk.getDetails();
                     break;
                 case 7:
                     System.out.println("");
